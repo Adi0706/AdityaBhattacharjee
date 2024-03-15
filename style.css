@@ -26,18 +26,180 @@ html, body {
     height: 100%;
     width: 100%;
 }
-.main{
-    position:relative;
 
+.main {
+    position: relative;
+    z-index: 10;
 }
-/* #background-image {
-    position: fixed;
+
+.page1 {
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+    z-index: 10;
+    background: white;
+}
+
+.page1 img {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    z-index:9;
+    background-repeat: no-repeat; 
+}
+
+.landing-text {
+    position: relative;
+    z-index: 9;
+    color: black;
+    padding: 1vw 2vw;
+    top: 15vw;
+}
+
+.landing-text h1 {
+    font-size: 7vw;
+}
+
+.landing-text p {
+    width: 50%;
+    color: white;
+    left: 5vw;
+}
+
+.page2 {
+    min-height: 100vh;
+    width: 100vw;
+}
+
+#footer {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    color: black;
+    z-index: 9;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 3vw;
+    background: white;
+}
+
+#footer h3 {
+    font-size: 8vw;
+    padding: 1vw 3vw;
+    color: white;
+}
+
+#footer img {
+    position: relative;
+    z-index: 10;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    border: solid;
+    border-color: white;
+    color: black;
+    margin-right:15vw;
+}
+.skills img{
+    width:5vw;
+}
+.footer-about {
+    font-size: 3vw;
+    line-height: 1.5em;
+    width: 50%;
+    padding: 1vw 2vw;
+    color: black;
+    z-index: 9;
+    position: relative;
+}
+.footer-about img{
+    width:2vw;
+}
+
+.icons {
+    display: flex;
+    gap: 40vw;
+    cursor: pointer;
+    font-size: 1vw;
+}
+
+.icons a {
+    text-decoration: none;
+    color: white;
+}
+
+#hero-shape {
+    position: absolute;
+    width: 46vw;
+    height: 46vw;
+    left: -10vw;
+    top: 3vh;
+    z-index: 8;
+}
+
+#hero-1 {
+    background-color: #FE320A;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border-radius: 50%;
+    filter: blur(10px);
+    position: absolute;
+}
+
+#hero-2 {
+    background: linear-gradient(#FE320A, #fe3f0a);
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    position: absolute;
+    animation-name: anime2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    filter: blur(25px);
+}
+
+#hero-3 {
+    background: linear-gradient(#FE320A, #fe3f0a);
+    height: 30vw;
+    position: absolute;
+    width: 30vw;
+    border-radius: 50%;
+    filter: blur(25px);
+    animation-name: anime1;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes anime1 {
+    from {
+        transform: translate(65%, -3%);
+    }
+
+    to {
+        transform: translate(0%, 20%);
+    }
+}
+
+@keyframes anime2 {
+    from {
+        transform: translate(5%, -5%);
+    }
+
+    to {
+        transform: translate(-20%, 30%);
+    }
 }
