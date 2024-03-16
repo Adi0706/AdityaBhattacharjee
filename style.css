@@ -203,3 +203,29 @@ html, body {
         transform: translate(-20%, 30%);
     }
 }
+.page1 nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%; /* Optional: to make it span the full width */
+    display: flex;
+    justify-content: center; /* Optional: to center the navigation horizontally */
+    gap: 5vw;
+    font-size: 1vw;
+    padding: 5vh 2vh;
+    box-shadow: 0px 0px 30px black;
+ 
+}
+.page1 nav:hover{
+    display:flex;
+}
+.page1 nav a {
+    text-decoration:none;
+}
+.page1 nav h1 {
+    color: white;
+    cursor: pointer;
+}
+
+.page1 nav h1:hover {
+    color: black;
+}
