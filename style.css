@@ -104,8 +104,6 @@ html, body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
-    border: solid;
-    border-color: white;
     color: black;
     margin-right:15vw;
 }
@@ -228,4 +226,65 @@ html, body {
 
 .page1 nav h1:hover {
     color: black;
+}
+.page3 {
+    min-height: 100vh;
+    width: 100vw;
+    overflow: hidden; /* prevent scrolling */
+}
+
+.page3 nav {
+    background: black;
+    color: white;
+    padding: 1vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1vw;
+    box-shadow: 0px 0px 10px black;
+}
+
+.page3 nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.project-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.project-image {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius:50px;
+}
+
+.view-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1vw 1vw;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radis:50px;
+}
+
+.project-image:hover .view-button {
+    opacity: 1;
 }
