@@ -300,7 +300,7 @@ html, body {
     display: flex;
     justify-content: space-between;
     font-size: 1vw;
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 0px 30px black;
 }
 
 .page4 nav a {
