@@ -235,17 +235,23 @@ html, body {
 
 .page3 nav {
     background: black;
-    color: white;
+    color: black;
     padding: 1vw;
     display: flex;
     justify-content: space-between;
-    font-size: 1vw;
+    font-size: 0.8vw;
     box-shadow: 0px 0px 10px black;
+    
 }
-
+.nav-page-1{
+    display:flex;
+    gap:5vw;
+    margin-right:2vw;
+}
 .page3 nav a {
     text-decoration: none;
     color: white;
+   
 }
 
 .project-section {
@@ -295,17 +301,23 @@ html, body {
 }
 .page4 nav {
     background: black;
-    color: white;
+    color: black;
     padding: 1vw;
     display: flex;
-    justify-content: space-between;
-    font-size: 1vw;
-    box-shadow: 0px 0px 30px black;
+    justify-content:space-between;
+
+
+  /* box-shadow: 0px 0px 30px black; */
 }
 
+.nav-page{
+    display:flex;
+    align-items:center;
+}
 .page4 nav a {
     text-decoration: none;
     color: white;
+    margin-left:0px;
 }
 .page4-container{
     position:absolute;
