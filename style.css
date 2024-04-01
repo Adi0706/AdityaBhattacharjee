@@ -210,7 +210,7 @@ html, body {
     gap: 5vw;
     font-size: 1vw;
     padding: 5vh 2vh;
-    /* box-shadow: 0px 0px 30px black; */
+    box-shadow: 0px 0px 30px black;
  
 }
 .page1 nav:hover{
@@ -307,7 +307,7 @@ html, body {
     justify-content:space-between;
 
 
-  /* box-shadow: 0px 0px 30px black; */
+  box-shadow: 0px 0px 30px black;
 }
 
 .nav-page{
@@ -438,6 +438,74 @@ padding:1vw;
     padding:1vw;
     
 }
+.page5{
+    min-height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position:relative;
+
+}
+.page5 nav {
+    background: black;
+    color: black;
+    padding: 1vw;
+    display: flex;
+    justify-content:space-between;
+
+
+  box-shadow: 0px 0px 30px black;
+}
+
+.nav-page-2{
+    display:flex;
+    gap:5vw;
+    margin-right:2vw;
+}
+.page5 nav a {
+    text-decoration: none;
+    color: white;
+    margin-left:0px;
+}
+.page5-con {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+
+height:auto;
+    align-items:center;
+Z-index:99;
+    height: 100%; /* or specify a specific height */
+    position:absolute;
+    
+}
+.service-img{
+   margin-top:40px;
+}
+.service-cards-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding:1vw;
+}
+
+.service-card {
+    width: calc(25% - 15px);
+    height:30vh;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    font-size:1.3vw;
+    font-size:1.3vw;
+    transition: transform 0.3s ease;
+    box-shadow:0px 5px 5px black;
+}
+
+.service-card:hover {
+    transform: translateY(-5px); /* Move card up slightly on hover */
+}
+
+
 @media (max-width: 600px) {
     @font-face {
         font-family: neu;
@@ -496,14 +564,16 @@ padding:1vw;
         position: relative;
         z-index: 9;
         color: white;
-        padding: 1vw 1vw;
+        padding: 2vw 2vw;
         top: 70vw;
     }
     
     .landing-text h1 {
         font-size: 12vw;
     }
-    
+    .landing-text h2{
+        font-size:3vw;
+    }
     .landing-text p {
         width: 50%;
         color: white;
@@ -514,6 +584,7 @@ padding:1vw;
         min-height: 100vh;
         width: 100vw;
     }
+   
     
     #footer {
         position: fixed;
@@ -680,7 +751,7 @@ padding:1vw;
         padding: 3vw;
         display: flex;
         justify-content: space-between;
-        font-size: 3vw;
+        font-size: 2vw;
         box-shadow: 0px 0px 10px black;
         
     }
@@ -746,7 +817,7 @@ padding:1vw;
         padding: 3vw;
         display: flex;
         justify-content: space-between;
-        font-size: 3vw;
+        font-size: 2vw;
         box-shadow: 0px 0px 10px black;
     }
     
@@ -865,6 +936,88 @@ padding:1vw;
     .page4-form button:hover {
         background: black;
         color:white;
+    }
+    .page5{
+        min-height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        position:relative;
+        
+      
+    }
+    .page5 nav {
+        background: black;
+        color: black;
+        padding: 3vw;
+        display: flex;
+        justify-content: space-between;
+        font-size: 2vw;
+        box-shadow: 0px 0px 10px black;
+    
+    
+      box-shadow: 0px 0px 30px black;
+    }
+    
+    .nav-page-2{
+        display:flex;
+        gap:5vw;
+        margin-right:2vw;
+    }
+    .page5 nav a {
+        text-decoration: none;
+        color: white;
+        margin-left:0px;
+    }
+    .page5-con {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 99;
+        height: 100%; /* or specify a specific height */
+        position: absolute;
+     );
+        /* top: 1vw; */
+    }
+    
+    .service-img {
+        display: none;
+    }
+    
+    .service-cards-container {
+        display: flex;
+        flex-wrap: wrap; /* Allow cards to wrap to next line on smaller screens */
+        justify-content: center; /* Center the cards horizontally */
+        align-items: center;
+        margin-top: 20px;
+        padding: 1vw;
+       
+    }
+    
+    .service-card {
+        width: calc(45% - 15px); /* Adjusted width to fit two cards per row on smaller screens */
+        max-width: 250px; /* Limit maximum width of cards */
+        height: 30vh;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 15px;
+        font-size: 3vw;
+        
+        transition: transform 0.3s ease;
+        box-shadow: 0px 5px 5px black;
+        margin: 10px; /* Add margin between cards */
+     
+    }
+    .service-card span{
+        font-size:3vw !important;
+    }
+    
+    /* Adjust hover effect to prevent layout shift on mobile */
+    @media only screen and (min-width: 600px) {
+        .service-card:hover {
+            transform: translateY(-5px); /* Move card up slightly on hover */
+        }
     }
     
     
