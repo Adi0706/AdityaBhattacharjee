@@ -8,3 +8,6 @@ document.addEventListener("DOMContentLoaded", function() {
         smooth: true
     });
 });
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector(".landing-text").classList.add("fade-in");
+});

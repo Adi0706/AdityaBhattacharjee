@@ -57,7 +57,14 @@ html, body {
     color: white;
     padding: 1vw 2vw;
     top: 15vw;
+    opacity: 0; /* Start with opacity set to 0 */
+    transition: opacity 2s ease-in; /* Apply transition effect */
 }
+
+.landing-text.fade-in {
+    opacity: 1; /* Set opacity to 1 when the fade-in class is applied */
+}
+
 
 .landing-text h1 {
     font-size: 7vw;
@@ -564,8 +571,14 @@ Z-index:99;
         position: relative;
         z-index: 9;
         color: white;
-        padding: 2vw 2vw;
+        padding: 1vw 2vw;
         top: 70vw;
+        opacity: 0; /* Start with opacity set to 0 */
+        transition: opacity 2s ease-in; /* Apply transition effect */
+    }
+    
+    .landing-text.fade-in {
+        opacity: 1; /* Set opacity to 1 when the fade-in class is applied */
     }
     
     .landing-text h1 {
