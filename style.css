@@ -438,4 +438,435 @@ padding:1vw;
     padding:1vw;
     
 }
-
+@media (max-width: 600px) {
+    @font-face {
+        font-family: neu;
+        src: url(./NeueHaasDisplayMediu.ttf);
+    }
+    
+    @font-face {
+        font-family: neu;
+        font-weight: 100;
+        src: url(./NeueHaasDisplayLight.ttf);
+    }
+    
+    @font-face {
+        font-family: neu;
+        font-weight: 200;
+        src: url(./NeueHaasDisplayRoman.ttf);
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: neu;
+    }
+    
+    html, body {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .main {
+        position: relative;
+        z-index: 10;
+    }
+    
+    .page1 {
+        min-height: 100vh;
+        width: 100vw;
+        position: relative;
+        z-index: 10;
+        background: white;
+    }
+    
+    .page1 img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; 
+    }
+    
+    .landing-text {
+        position: relative;
+        z-index: 9;
+        color: white;
+        padding: 1vw 1vw;
+        top: 70vw;
+    }
+    
+    .landing-text h1 {
+        font-size: 12vw;
+    }
+    
+    .landing-text p {
+        width: 50%;
+        color: white;
+        left: 5vw;
+    }
+    
+    .page2 {
+        min-height: 100vh;
+        width: 100vw;
+    }
+    
+    #footer {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: white;
+        color: black;
+        z-index: 9;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1vw 3vw;
+        background: white;
+    }
+    
+    #footer h3 {
+        font-size: 8vw;
+        padding: 1vw 3vw;
+        color: white;
+    }
+    
+    #footer img {
+        position: relative;
+        z-index: 10;
+    }
+    
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        color: black;
+        margin-right:2vw;
+    }
+    .skills img{
+        width:10vw;
+    }
+    .footer-about {
+        font-size: 6vw;
+        line-height: 1.2em;
+        width: 100%;
+        padding: 1vw 2vw;
+        color: black;
+        z-index: 9;
+        position: relative;
+    }
+    .footer-about img{
+        width:2vw;
+    }
+    
+    .icons {
+        display: flex;
+        gap: 40vw;
+        cursor: pointer;
+        font-size: 1vw;
+    }
+    
+    .icons a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    #hero-shape {
+        position: absolute;
+        width: 66vw;
+        height: 76vw;
+        left: -10vw;
+        top: 25vh;
+        z-index: 8;
+    }
+    
+    #hero-1 {
+        background-color: #FE320A;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        border-radius: 50%;
+        filter: blur(10px);
+        position: absolute;
+    }
+    
+    #hero-2 {
+        background: linear-gradient(#FE320A, #fe3f0a);
+        height: 30vw;
+        width: 30vw;
+        border-radius: 50%;
+        position: absolute;
+        animation-name: anime2;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        filter: blur(25px);
+    }
+    
+    #hero-3 {
+        background: linear-gradient(#FE320A, #fe3f0a);
+        height: 30vw;
+        position: absolute;
+        width: 30vw;
+        border-radius: 50%;
+        filter: blur(25px);
+        animation-name: anime1;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    
+    @keyframes anime1 {
+        from {
+            transform: translate(65%, -3%);
+        }
+    
+        to {
+            transform: translate(0%, 20%);
+        }
+    }
+    
+    @keyframes anime2 {
+        from {
+            transform: translate(5%, -5%);
+        }
+    
+        to {
+            transform: translate(-20%, 30%);
+        }
+    }
+    .page1 nav {
+        position: absolute;
+        bottom: 0;
+        width: 100%; 
+        display: flex;
+        justify-content: center;
+        gap: 5vw;
+        font-size: 3vw;
+        padding: 5vh 2vh;
+       
+     
+    }
+    .page1 nav:hover{
+        display:flex;
+    }
+    .page1 nav a {
+        text-decoration:none;
+    }
+    .page1 nav h1 {
+        color: white;
+        cursor: pointer;
+    }
+    
+    .page1 nav h1:hover {
+        color: black;
+    }
+    .page3 {
+        min-height: 100vh;
+        width: 100vw;
+        overflow: hidden; 
+    }
+    
+    .page3 nav {
+        background: black;
+        color: black;
+        padding: 3vw;
+        display: flex;
+        justify-content: space-between;
+        font-size: 3vw;
+        box-shadow: 0px 0px 10px black;
+        
+    }
+    .nav-page-1{
+        display:flex;
+        gap:5vw;
+        margin-right:1vw;
+    }
+    .page3 nav a {
+        text-decoration: none;
+        color: white;
+       
+    }
+    
+    .project-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        justify-items: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    .project-image {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+    }
+    
+    .project-image img {
+        width: 90vw;
+        height: auto;
+        display: block;
+        border-radius:50px;
+    }
+    
+    .view-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 2vw 2vw;
+        background-color: white;
+        color: black;
+        border: none;
+        cursor: pointer;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        border-radius:50px;
+    }
+    
+    .project-image:hover .view-button {
+        opacity: 1;
+    }
+    .page4 {
+        min-height: 100vh;
+        width: 100vw;
+        overflow: hidden; 
+    }
+    .page4 nav {
+        background: black;
+        color: black;
+        padding: 3vw;
+        display: flex;
+        justify-content: space-between;
+        font-size: 3vw;
+        box-shadow: 0px 0px 10px black;
+    }
+    
+    .nav-page{
+        display:flex;
+        align-items:center;
+    }
+    .page4 nav a {
+        text-decoration: none;
+        color: white;
+        margin-left:0px;
+    }
+    .page4-container {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 20%;
+        left: 10%;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .details {
+        font-size: 5vw;
+        z-index: 100;
+    }
+    
+    .details p {
+        color: black !important;
+    }
+    .details img{
+        width:5.5vw;
+        top:2vw;
+    }
+    
+    #hero-shape1 {
+        display: block;
+        position: absolute;
+        width: 50vw;
+        height: 50vw;
+        left: 0;
+        top: 3vh;
+        z-index: 1; 
+    }
+    
+    #hero-shapes {
+        position: relative;
+        z-index: 2; 
+    }
+    
+    #hero1,
+    #hero2,
+    #hero3 {
+        width: 60vw;
+        height: 60vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    @keyframes anime1 {
+        from {
+            transform: translate(50%, -3%);
+        }
+        to {
+            transform: translate(0%, 20%);
+        }
+    }
+    
+    @keyframes anime2 {
+        from {
+            transform: translate(5%, -5%);
+        }
+        to {
+            transform: translate(-10%, 30%);
+        }
+    }
+    
+    .page4-form form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        position: relative; /* Ensure form respects z-index */
+        z-index: 3; /* Place form above hero elements */
+    }
+    
+    .form-title h2 {
+        font-weight: 600;
+        font-size: 5vw;
+    }
+    
+    .page4-form input,
+    .page4-form textarea {
+        width: 80vw;
+        max-width: 300px;
+        padding: 3vw; 
+        outline: none;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+    
+    .page4-form button {
+        padding: 1.5vw 2.5vw;
+        cursor: pointer;
+        background: white;
+        border: none;
+        border-radius: 10px;
+        color: black;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+    
+    .page4-form button:hover {
+        background: black;
+        color:white;
+    }
+    
+    
+  }
+  
